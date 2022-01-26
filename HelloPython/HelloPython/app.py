@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, flash, redirect, render_template, request, session, abort
 
 # Create an instance of the Flask class that is the WSGI application.
 # The first argument is the name of the application module or package,
@@ -11,12 +11,15 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "Index!"
+    return "Flask App!"
 
-@app.route('/hello')
-def hello():
-    # Render the page
-    return "Hello Python!"
+@app.route("/hello")
+def helloSimple():
+    return 'Hello World!'
+
+@app.route("/hello/<string:name>/")
+def hello(name):
+    return render_template('test.html',name=name)
 
 @app.route("/members")
 def members():
@@ -27,5 +30,4 @@ def getMember(name):
     return name
 
 if __name__ == '__main__':
-    # Run the app server on localhost:4449
-    app.run('localhost', 4449)
+    app.run(host='0.0.0.0', port=80)

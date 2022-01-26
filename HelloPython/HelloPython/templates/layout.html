@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+            display: block;
+        }
+        h1 {
+            font-family: 'Brush Script MT', cursive;
+        }
+    </style>
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    <div id="content">{% block content %}{% endblock %}</div>
+</body>
+</html>
