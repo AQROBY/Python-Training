@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "aa0622d0-3369-4d6d-a38d-220e301ab009": {
+      "ProjectGuid": "aa0622d0-3369-4d6d-a38d-220e301ab009",
+      "DisplayName": "HelloPython",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
