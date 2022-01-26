@@ -1,0 +1,14 @@
+Flaskr/Flaskr/venv/
+
+Flaskr/Flaskr/*.pyc
+Flaskr/Flaskr/__pycache__/
+
+Flaskr/Flaskr/instance/
+
+Flaskr/Flaskr/.pytest_cache/
+Flaskr/Flaskr/.coverage
+Flaskr/Flaskr/htmlcov/
+
+Flaskr/Flaskr/dist/
+Flaskr/Flaskr/build/
+Flaskr/Flaskr/*.egg-info/
