@@ -27,6 +27,64 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="flaskr\" />
+    <Folder Include="flaskr\static\" />
+    <Folder Include="flaskr\templates\" />
+    <Folder Include="flaskr\templates\auth\" />
+    <Folder Include="flaskr\templates\blog\" />
+    <Folder Include="venv\" />
+    <Folder Include="tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="flaskr\auth.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskr\blog.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskr\db.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="setup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="flaskr\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\conftest.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\test_auth.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\test_blog.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\test_db.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\test_factory.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tests\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MANIFEST.in" />
+    <Content Include="flaskr\schema.sql" />
+    <Content Include="flaskr\static\style.css" />
+    <Content Include="flaskr\templates\auth\login.html" />
+    <Content Include="flaskr\templates\auth\register.html" />
+    <Content Include="flaskr\templates\base.html" />
+    <Content Include="flaskr\templates\blog\create.html" />
+    <Content Include="flaskr\templates\blog\index.html" />
+    <Content Include="flaskr\templates\blog\update.html" />
+    <Content Include="tests\data.sql" />
+    <Content Include="setup.cfg">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="tests\setup.cfg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
